@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { connectMongo } from '../../../../lib/mongodb'; // relative: src/app/api/login -> src/lib
-import User from '../../../../models/User';
+import { connectMongo } from '../../../lib/mongodb'; // relative: src/app/api/login -> src/lib
+import User from '../../../models/User';
 import bcrypt from 'bcryptjs';
 
 export async function POST(req: NextRequest) {
