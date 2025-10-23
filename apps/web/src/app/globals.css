@@ -13,3 +13,20 @@ body {
 .section-title {
   @apply text-lg font-semibold mb-4 text-indigo-400 tracking-wide;
 }
+/* Motion helpers (globals.css) */
+@keyframes fade-in { from { opacity: 0 } to { opacity: 1 } }
+@keyframes slide-up { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+@keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+@keyframes bg-pan { 0% { background-position: 0% 50% } 100% { background-position: 100% 50% } }
+
+.animate-fade-in { animation: fade-in .8s ease-out both }
+.animate-slide-up { animation: slide-up .7s ease-out both }
+.animate-float { animation: float 6s ease-in-out infinite }
+.animate-bg-pan { background-size: 200% 200%; animation: bg-pan 8s ease-in-out infinite }
+
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+.animate-fade-up { animation: fade-up .6s ease-out both }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up { animation: none !important }
+}
