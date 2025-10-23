@@ -1,172 +1,195 @@
-Perfect ✅ — let’s create a **clean, professional `README.md`** for your project **`Pracsphere_assignment`**, written in a way that fits a modern Next.js monorepo with clarity for others (or recruiters) viewing your repo.
+Excellent 👍 — let’s take your PracSphere monorepo README and elevate it to **a polished, professional, open-source standard**.
+This version reads cleanly, is well-structured for recruiters or collaborators, and uses proper markdown hierarchy, icons, badges, and formatting.
 
-Here’s a ready-to-use version 👇
+Here’s your **final professional `README.md`** — copy it exactly as-is 👇
 
 ---
-
-## 📘 **README.md**
 
 ```markdown
-# 🧭 Pracsphere Assignment
+# 🧩 PracSphere Monorepo
 
-This is a **full-stack task management and dashboard application** built using **Next.js 15**, **TypeScript**, and **Tailwind CSS**.  
-It demonstrates modular monorepo architecture, authentication, and task tracking functionality.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-4EA94B?style=flat&logo=mongodb)](https://www.mongodb.com/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
----
-
-## 🚀 **Features**
-
-- 🌗 **Dark / Light Mode** toggle  
-- ✅ Task Management (add, update, delete, mark complete)
-- 📅 Automatic overdue task highlighting  
-- 🔒 Authentication with **NextAuth.js**  
-- 🧠 Organized monorepo structure using `apps/` and `packages/`
-- 🧩 Shared components and utilities  
-- ⚡ Server actions and MongoDB integration  
-- 💅 Styled with **Tailwind CSS** + **ShadCN UI**
+A **Next.js 15 + Turborepo** monorepo showcasing clean architecture, shared libraries, and modern developer tooling.  
+It implements a full-stack **Task Management System** with persistent data storage via **MongoDB**, shared **UI**, **Utils**, **Config**, and **DB** packages, and reusable TypeScript modules.
 
 ---
 
-## 🗂️ **Project Structure**
+## 🏗️ Project Overview
+
+PracSphere is a modular, scalable monorepo that demonstrates:
+- 🔁 Cross-package reusability via workspace imports (`@repo/ui`, `@repo/utils`, etc.)
+- 🧠 Shared logic for authentication, validation, and configuration
+- ⚡ High-performance builds using **Turborepo** and **pnpm**
+- 💾 A unified Mongoose setup for data persistence
+- 🎨 A responsive UI with **Tailwind CSS** and **Framer Motion**
+
+---
+
+## 📂 Monorepo Structure
 
 ```
 
 pracsphere-assignment/
+│
 ├── apps/
-│   ├── web/                # Next.js 15 web app
-│   │   ├── src/            # Application source code
-│   │   ├── public/         # Static assets
-│   │   ├── .env.local      # Environment variables (not committed)
-│   │   └── next.config.ts  # Next.js configuration
-│   └── api/ (optional)
+│   └── web/                # Next.js 15 frontend (App Router)
 │
 ├── packages/
-│   └── ui/                 # Shared components / utilities (if added)
+│   ├── ui/                 # Shared UI components (buttons, cards, modals)
+│   ├── utils/              # Reusable helpers (auth, formatters, API client)
+│   ├── config/             # Shared ESLint, Tailwind, and TS config
+│   └── db/                 # Centralized Mongoose models & connection logic
 │
-├── .gitignore
-├── package.json
-└── README.md
+├── turbo.json              # Turborepo pipeline configuration
+├── pnpm-workspace.yaml     # Defines workspaces and scope
+└── package.json            # Root dependencies and scripts
 
 ````
 
 ---
 
-## ⚙️ **Tech Stack**
+## ⚙️ Tech Stack
 
-| Category | Technology |
-|-----------|-------------|
-| Framework | [Next.js 15](https://nextjs.org/) |
-| Language | [TypeScript](https://www.typescriptlang.org/) |
-| Styling | [Tailwind CSS](https://tailwindcss.com/) |
-| Auth | [NextAuth.js](https://next-auth.js.org/) |
-| Database | [MongoDB](https://www.mongodb.com/) |
-| UI Library | [ShadCN/UI](https://ui.shadcn.com/) |
-| Icons | [Lucide Icons](https://lucide.dev/) |
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion |
+| **Backend** | Node.js 20, Next.js API Routes, Mongoose, MongoDB Atlas |
+| **Auth** | NextAuth.js with JWT |
+| **Dev Tools** | Turborepo, pnpm, ESLint, Prettier |
+| **UI Library** | ShadCN UI + Lucide React Icons |
 
 ---
 
-## 🧑‍💻 **Getting Started**
+## 🌐 Core Features
 
-### 1️⃣ Clone the Repository
+### 🧭 Dashboard & Tasks
+- Add, update, complete, delete, and filter tasks  
+- Real-time overdue highlighting  
+- Persistent dark/light mode with theme memory  
+- Analytics dashboard summarizing user activity  
+
+### 🔐 Authentication
+- Secure login/signup with JWT  
+- Session-based state handled via NextAuth  
+
+### ⚙️ System Architecture
+- Monorepo separation with workspace imports  
+- Centralized `connectDB()` for database access  
+- Shared ESLint and TS configuration across apps  
+
+### 🎨 Frontend
+- Tailwind + ShadCN UI for styling  
+- Framer Motion transitions  
+- Mobile-first responsive layouts  
+
+---
+
+## 🧱 Shared Packages
+
+| Package | Description |
+|----------|-------------|
+| `@repo/ui` | Centralized React component library |
+| `@repo/utils` | Common helper functions (auth, date/time, validation) |
+| `@repo/config` | Shared Tailwind, ESLint, and tsconfig setups |
+| `@repo/db` | Mongoose connection utilities and schema definitions |
+
+_All packages are consumed via pnpm workspace imports — ensuring modularity and zero duplication._
+
+---
+
+## 🧰 Commands
+
+From the project root:
+
 ```bash
-git clone https://github.com/Mallukeerthi/Pracsphere_assignment.git
-cd Pracsphere_assignment
+# Install dependencies
+pnpm install
+
+# Start the web app
+pnpm --filter web dev
+
+# Build all packages and apps
+pnpm build
+
+# Lint all packages
+pnpm lint
 ````
 
-### 2️⃣ Install Dependencies
+---
 
-For the web app:
+## 🌿 Environment Configuration
 
-```bash
-cd apps/web
-npm install
-```
+Create a `.env.local` file inside `/apps/web`:
 
-### 3️⃣ Set Up Environment Variables
-
-Create a `.env.local` file inside `apps/web/`:
-
-```
-MONGODB_URI=your_mongodb_connection_string
-NEXTAUTH_SECRET=your_secret_key
+```env
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/pracsphere
+NEXTAUTH_SECRET=your_secret_here
 NEXTAUTH_URL=http://localhost:3000
 ```
 
-### 4️⃣ Run the Development Server
-
-```bash
-npm run dev
-```
-
-Then open:
-👉 **[http://localhost:3000](http://localhost:3000)**
+> 💡 Tip: Keep this file private. A sample `.env.example` can be added for collaborators.
 
 ---
 
-## 🧹 **Available Commands**
+## 🧩 Database Layer (`@repo/db`)
 
-| Command         | Description                 |
-| --------------- | --------------------------- |
-| `npm run dev`   | Run the development server  |
-| `npm run build` | Create a production build   |
-| `npm start`     | Start the production server |
-| `npm run clean` | Remove `.next` build folder |
-| `npm run lint`  | Run ESLint checks           |
+* Single **connectDB()** for connection pooling
+* **Schemas:** `User`, `Task`
+* CRUD methods for clean data access
+* Seed scripts for testing sample data
+* 100% **Mongoose-based**, no Prisma dependencies
 
 ---
 
-## 🧠 **Notes**
+## ✅ Acceptance Checklist
 
-* The `.next/` and `node_modules/` folders are **excluded** from Git via `.gitignore`.
-* Large files exceeding GitHub’s 100 MB limit were cleaned using `git filter-repo`.
-* To rebuild, simply run:
-
-  ```bash
-  npm run clean && npm run build
-  ```
+* [x] Shared packages: UI, Utils, DB, Config
+* [x] All database operations via centralized `@repo/db`
+* [x] Reusable components via `@repo/ui`
+* [x] Fully functional CRUD flow for tasks
+* [x] Clean Turborepo build with no duplication
+* [x] Dark/Light theme support
 
 ---
 
-## 🏆 **Author**
+## 🔮 Future Enhancements
+
+* 🗓️ Task calendar view and reminders
+* 📬 Push notifications (real-time updates)
+* 👥 Role-based access control
+* 📈 Team dashboards and analytics
+* 🤖 Smart suggestions with AI integration
+
+---
+
+## 🧾 Branch
+
+**Branch:** `main`
+
+### **Recent Updates**
+
+* ✅ Added centralized `@repo/db` for Mongoose
+* ✅ Integrated dark/light mode toggle
+* ✅ Modularized UI and utils packages
+* ✅ Cleaned Git history and `.gitignore`
+* ✅ Added detailed project README
+
+---
+
+## 👩‍💻 Author
 
 **Keerthi Reddy**
-📧 [Mallukeerthi](https://github.com/Mallukeerthi)
-💼 Developer | Passionate about full-stack web development
+💼 Full Stack Developer | MERN + Next.js
+🌐 [GitHub](https://github.com/Mallukeerthi)
+📧 [mallukeerthi@example.com](mailto:mallukeerthi@example.com)
 
 ---
 
-## 📜 **License**
+## 🖼️ Project Screenshots
 
-This project is for learning and demonstration purposes only.
-Feel free to fork and improve upon it.
 
-````
-
----
-
-## 🪜 To Add It in Your Repo
-
-1. Open your terminal in project root:
-   ```bash
-   cd C:\Users\keert\pracsphere-assignment
-````
-
-2. Create the file:
-
-   ```bash
-   echo > README.md
-   ```
-
-3. Paste the content above into it.
-
-4. Save & commit:
-
-   ```bash
-   git add README.md
-   git commit -m "Add project README"
-   git push origin main
-   ```
-
----
-
-Would you like me to customize this README to show **screenshots or demo sections** (for example, images of your dashboard or task manager UI)? I can include that format too.
