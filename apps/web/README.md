@@ -1,18 +1,11 @@
-Excellent 👍 — let’s take your PracSphere monorepo README and elevate it to **a polished, professional, open-source standard**.
-This version reads cleanly, is well-structured for recruiters or collaborators, and uses proper markdown hierarchy, icons, badges, and formatting.
 
-Here’s your **final professional `README.md`** — copy it exactly as-is 👇
-
----
-
-```markdown
 # 🧩 PracSphere Monorepo
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-4EA94B?style=flat&logo=mongodb)](https://www.mongodb.com/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 
 A **Next.js 15 + Turborepo** monorepo showcasing clean architecture, shared libraries, and modern developer tooling.  
 It implements a full-stack **Task Management System** with persistent data storage via **MongoDB**, shared **UI**, **Utils**, **Config**, and **DB** packages, and reusable TypeScript modules.
@@ -186,10 +179,20 @@ NEXTAUTH_URL=http://localhost:3000
 **Keerthi Reddy**
 💼 Full Stack Developer | MERN + Next.js
 🌐 [GitHub](https://github.com/Mallukeerthi)
-📧 [mallukeerthi@example.com](mailto:mallukeerthi@example.com)
+📧 [mailto:keerthyreddymallukeerthi@gmail.com]
 
 ---
 
 ## 🖼️ Project Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/14b88b78-87ed-4ab5-8cfc-fee67b5bfe13" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6c6bbff2-2ccf-4c4f-9639-5b21fbda9f63" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27b5f7ec-79dd-4a5b-828d-7377a2331011" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e87ad52c-c3b3-4432-9bc0-28be865c6c41" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d3324d53-622b-44fb-8479-ea3bfe040d53" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f8722e1-b226-4b93-b6de-bdcd543b7225" />
+
 
 
